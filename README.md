@@ -15,7 +15,7 @@ This is my time series analysis of Mercado Libre's Google search trend and stock
 
 ## Technologies
 
-This is a Python 3.7 project ran using a JupyterLab in a conda dev environment. 
+This is a Python 3.8 project ran in Google Colab but can be used in JupyterLab using a Conda dev environment. 
 
 The following dependencies are used: 
 1. [Jupyter](https://jupyter.org/) - Running code 
@@ -23,11 +23,23 @@ The following dependencies are used:
 3. [Pandas](https://github.com/pandas-dev/pandas) (1.3.5) - Data analysis
 4. [Matplotlib](https://github.com/matplotlib/matplotlib) (3.5.1) - Data visualization
 5. [Numpy](https://numpy.org/) (1.21.5) - Data calculations + Pandas support
-6. [hvPlot](https://hvplot.holoviz.org/index.html) (0.8.1) - Interactive Pandas plots 
+6. [hvPlot](https://hvplot.holoviz.org/index.html) (0.8.1) - Interactive Pandas plots
+7. [Holoviews](https://hvplot.holoviz.org/index.html) (1.14.9) - Interactive Pandas plots
+8. [PyStan](https://pystan.readthedocs.io/en/latest/) (3.3.0) - Prophet support
+9. [Prophet](https://facebook.github.io/prophet/) (1.1.1) - Machine learning time series forcasting models
 
 ---
 
 ## Installation Guide
+
+The Google Colab notebook installs the required dependencies in the first cell: 
+```python
+# Install the required libraries
+!pip install pystan
+!pip install prophet
+!pip install hvplot
+!pip install holoviews
+```
 
 If you would like to run the program in JupyterLab, install the [Anaconda](https://www.anaconda.com/products/distribution) distribution and run `jupyter lab` in a conda dev environment.
 
@@ -41,7 +53,7 @@ Then install the requirements with `conda install --name myenv --file requiremen
 
 ## Usage
 
-The Jupyter notebook []() will provide all steps of the data collection, preparation, and analysis. Data visualizations are shown inline and accompanying analysis responses are provided.
+The Jupyter notebook [forecasting_net_prophet.ipynb](/forecasting_net_prophet.ipynb) will provide all steps of the data collection, preparation, and analysis. Data visualizations are shown inline and accompanying analysis responses are provided. It can be uploaded to Google Colab with the provided .csv files in `/Resources`, or can be viewed in the [GitHub uploaded version](https://colab.research.google.com/github/ethansilvas/mercadolibre-time-series-analysis/blob/main/forecasting_net_prophet.ipynb)
 
 ---
 
