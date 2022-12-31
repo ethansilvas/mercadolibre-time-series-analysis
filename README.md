@@ -11,6 +11,27 @@ This is my time series analysis of Mercado Libre's Google search trend and stock
 
 ### Summary
 
+I start by finding unusual patterns in the Google search traffic, and to do so I look at the data from May 2020 which was the trends during peak Covid. For that month I compare the total search traffic to the median total search traffic across the whole dataset. 
+
+![Line graph showing spike in May 5th 2020 for Mercado Libre Google search traffic](/Resources/Images/may-2020-trends.png)
+
+Then I look for seasonality in the search trends by analyzing the search traffic based on day of the week and week of the year. 
+
+![Heatmap showing that for each day of the week 11am-1pm have the highest search traffic](/Resources/Images/day-of-week-heatmap.png)
+![Line graph showing that the first and last weeks of the year show the highest search traffic](/Resources/Images/week-of-year.png)
+
+Next I analyze the stock price with the Google search trends to see if there are any correlating relationships between them.
+
+![Correlation matrix showing an inverse relationship between lagged search trends and stock volatility, and a positive correlation between lagged search trends and hourly stock returns](/Resources/Images/trend-stock-corr.png)
+
+After that I use Prophet to train a machine learning model to make in and out of sample forecasts (80 days out of sample). 
+
+![Forecast line graphs showing metrics like Tuesday being the highest search traffic day, 11am-1pm being the highest search traffic times, and November seeing the lowest search traffic out of the year](/Resources/Images/trend-components.png)
+
+Finally, I again use Prophet to create another model to forecast the next quarter's potential revenue based on the sales data. 
+
+![Scatter plot showing the prophet model's prediction compared to actual values](/Resources/Images/revenue-forecast.png)
+
 ---
 
 ## Technologies
