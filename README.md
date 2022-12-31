@@ -1,8 +1,13 @@
 # Module 11 Challenge - Mercado Libre Time Series Analysis
 
-<a href="https://colab.research.google.com/github/ethansilvas/mercadolibre-time-series-analysis/blob/main/forecasting_net_prophet.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+This project is best viewed/ran in Google Colab! -> <a href="https://colab.research.google.com/github/ethansilvas/mercadolibre-time-series-analysis/blob/main/forecasting_net_prophet.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+This is my time series analysis of Mercado Libre's Google search trend and stock price data to find out if the ability to predict search traffic can translate into the ability to successfully trade the stock. In my analysis I visualize the data's seasonality, evaluate how the company's stock price correlates to its Google search traffic, and use [Facebook's Prophet](https://facebook.github.io/prophet/) to train a machine learning model that forecasts search traffic and future revenue. 
 
 ### Data Used
+1. [google_hourly_search_trends.csv](/Resources/google_hourly_search_trends.csv) - Hourly Google search traffic values 2016-2020
+2. [mercado_stock_price.csv](/Resources/mercado_stock_price.csv) - Closing stock price values 2015-2020
+3. [mercado_daily_revenue.csv](/Resources/mercado_daily_revenue.csv) - Daily revenue reported in millions of dollars 2019-2020
 
 ### Summary
 
